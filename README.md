@@ -1,18 +1,19 @@
 # NamTweaks
 
-Custom Fortnite performance and configuration tweaks.
+Simple, reversible Fortnite configuration tweaks with a one-click Windows launcher.
 
-> This project is independently written and is not affiliated with or copied from any other tweak pack.
+## Quick start
+1. Download/clone this repository.
+2. Double-click `Start-NamTweaks.bat`.
+3. The script creates a backup in `%USERPROFILE%\NamTweaks-Backup` before changing the Fortnite config.
+4. For the performance preset, run PowerShell with `-Preset Performance`.
+5. To restore the backup, run `powershell -File scripts\NamTweaks.ps1 -Preset Restore`.
 
-## Included
-- Safe performance presets
-- Fortnite config backup/restore
-- Optional Windows gaming optimizations
-- Clear reversible scripts
+### Presets
+- `Balanced` — disables VSync.
+- `Performance` — disables VSync and removes the configured FPS cap.
+- `Restore` — restores the last NamTweaks backup.
 
-## Usage
-1. Run `scripts/NamTweaks.ps1` from PowerShell.
-2. Choose a preset.
-3. Restart Fortnite if requested.
+If Fortnite has never been launched on the PC, run it once first so its config directory exists.
 
-Always review scripts before running them. Some Windows changes can affect other games or apps.
+This is an independently written tweak pack. It does not include cheats, anti-cheat bypasses, or game exploits.
